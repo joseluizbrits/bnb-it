@@ -5,7 +5,8 @@ const GlobalStyles = createGlobalStyle`
     --white: #FFFFFF;
     --primary-light: #B7FBFF;
     --primary-light-10: rgba(183, 251, 255, 0.1);
-    --primary-gradient: linear-gradient(20deg, #54F6FF, #B7FBFF),;
+    --primary-light-50: rgba(183, 251, 255, 0.5);
+    --primary-gradient: linear-gradient(40deg, #3DF4FF, #B7FBFF);
     --primary-dark: #064F53;
     --primary-dark-50: rgba(6, 79, 63, 0.5);
     --primaryGradient: linear-gradient(to right, #692FA4, #764BA2, #8659B4);
@@ -62,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .container {
-    padding: 0 200px;
+    padding: 0 120px;
   }
 
   /* ---------- SCROLLBAR ---------- */

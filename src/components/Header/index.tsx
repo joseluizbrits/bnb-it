@@ -2,7 +2,7 @@
 
 import Logo from "@/icons/Logo";
 import { HeaderContainer } from "./styles";
-import ButtonOutlined from "@/ButtonOutlined";
+import ButtonOutlined from "@/components/ButtonOutlined";
 
 function Header() {
   return (

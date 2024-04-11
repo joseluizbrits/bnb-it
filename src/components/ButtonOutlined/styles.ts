@@ -6,6 +6,7 @@ export const OutlinedStyle = styled.a`
   padding: 10px 20px;
   border-radius: 10px;
   border: 1px solid var(--primary-light);
+
   transition: 0.3s ease;
 
   &:hover {
