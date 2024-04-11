@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { OutlinedStyle } from "./styles";
+import { FilledStyle } from "./styles";
 
 type ButtonFilledProps = {
   children: ReactNode;
@@ -7,7 +7,7 @@ type ButtonFilledProps = {
 };
 
 function ButtonFilled({ children, href }: ButtonFilledProps) {
-  return <OutlinedStyle href={href}>{children}</OutlinedStyle>;
+  return <FilledStyle href={href}>{children}</FilledStyle>;
 }
 
 export default ButtonFilled;

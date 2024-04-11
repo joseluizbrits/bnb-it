@@ -27,7 +27,7 @@ export const FirstText = styled.div`
 
   p {
     font-size: 1.25rem;
-    line-height: 1.25em;
+    line-height: 1.5em;
     color: var(--gray-mid);
     margin: 0 auto;
     margin-top: 16px;
@@ -116,7 +116,7 @@ export const SecondText = styled.div`
 
   p {
     font-size: 1.25rem;
-    line-height: 1.25em;
+    line-height: 1.5em;
     text-align: center;
     color: var(--gray-mid);
     margin-top: 12px;
