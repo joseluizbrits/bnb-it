@@ -4,6 +4,7 @@ const GlobalStyles = createGlobalStyle`
   :root {
     --white: #FFFFFF;
     --primary-light: #B7FBFF;
+    --primary-light-10: rgba(183, 251, 255, 0.1);
     --primary-gradient: linear-gradient(20deg, #54F6FF, #B7FBFF),;
     --primary-dark: #064F53;
     --primary-dark-50: rgba(6, 79, 63, 0.5);
@@ -61,7 +62,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .container {
-    padding: 0 120px;
+    padding: 0 200px;
   }
 
   /* ---------- SCROLLBAR ---------- */

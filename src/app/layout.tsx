@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { poppins } from "@/lib/fonts";
 import StylesProvider from "@/styles/StylesProvider";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "BNB IT",
@@ -33,7 +34,10 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={poppins.className}>
-        <StylesProvider>{children}</StylesProvider>
+        <StylesProvider>
+          <Header />
+          {children}
+        </StylesProvider>
       </body>
     </html>
   );
