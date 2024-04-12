@@ -44,7 +44,8 @@ export const ContactContainer = styled.section`
     margin-top: 160px;
     padding: 0 120px;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content 1fr;
     justify-content: center;
     gap: 80px;
 

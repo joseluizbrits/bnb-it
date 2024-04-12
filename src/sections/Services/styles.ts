@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SolutionsContainer = styled.section`
+export const ServicesContainer = styled.section`
   margin-top: 160px;
   position: relative;
 

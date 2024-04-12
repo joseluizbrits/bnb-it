@@ -5,10 +5,10 @@ import ButtonOutlined from "@/components/ButtonOutlined";
 import ButtonLanguageSwitch from "@/components/ButtonLanguageSwitch";
 import Logo from "@/icons/Logo";
 import useLanguageSwitch from "@/hooks/useLanguageSwitch";
-import { text } from "./text";
+import { navlink, button } from "./text";
 
 function Header() {
-  const { activeLanguage } = useLanguageSwitch();
+  const { language } = useLanguageSwitch();
 
   return (
     <HeaderContainer className="container">
@@ -20,13 +20,11 @@ function Header() {
         <ul>
           <li>
             <a href="#services" className="navlink">
-              {text.navlink[activeLanguage]}
+              {navlink[language]}
             </a>
           </li>
           <li>
-            <ButtonOutlined href="#contact">
-              {text.button[activeLanguage]}
-            </ButtonOutlined>
+            <ButtonOutlined href="#contact">{button[language]}</ButtonOutlined>
           </li>
         </ul>
 

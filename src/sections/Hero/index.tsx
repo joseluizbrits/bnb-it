@@ -1,21 +1,34 @@
 "use client";
-import CoordinatesTop from "@/components/CordinatesTop";
-import { FirstText, HeroContainer, SecondText } from "./styles";
-import ButtonFilled from "@/components/ButtonFilled";
+
 import Image from "next/image";
+import parse from "html-react-parser";
+
+import { FirstText, HeroContainer, SecondText } from "./styles";
+
+import CoordinatesTop from "@/components/CordinatesTop";
+import ButtonFilled from "@/components/ButtonFilled";
+
+import useLanguageSwitch from "@/hooks/useLanguageSwitch";
+import {
+  firsTitle,
+  firstSubtitle,
+  secondTitle,
+  secondSubtitle,
+  label,
+  button,
+  alt,
+} from "./text";
 
 function Hero() {
+  const { language } = useLanguageSwitch();
+
   return (
     <HeroContainer>
       <CoordinatesTop />
       <FirstText>
-        <h1>Consultoria de precisão guiando sua empresa para o sucesso</h1>
-        <p>
-          A BNB IT organiza os seus dados de forma eficaz, melhora a compreensão
-          do <em>desempenho do seu negócio</em> e te faz identificar novas
-          oportunidades.
-        </p>
-        <ButtonFilled href="#">Descubra</ButtonFilled>
+        <h1>{firsTitle[language]}</h1>
+        <p>{parse(firstSubtitle[language])}</p>
+        <ButtonFilled href="#">{button[language]}</ButtonFilled>
       </FirstText>
 
       <SecondText>
@@ -25,18 +38,14 @@ function Hero() {
             fill
             priority
             unoptimized
-            alt="Imagem microscópica de algo parecido com um neurônio"
+            alt={alt[language]}
           />
         </div>
 
         <div>
-          <span>Inteligência em Banco de Dados</span>
-          <h2>Organize e visualize seus dados com análises avançadas</h2>
-          <p>
-            Uma equipe com conhecimento especializado em tecnologias de{" "}
-            <em>banco de dados e BI</em> que te fornece insights valiosos para
-            tomadas de decisão estratégicas.
-          </p>
+          <span>{label[language]}</span>
+          <h2>{secondTitle[language]}</h2>
+          <p>{parse(secondSubtitle[language])}</p>
         </div>
       </SecondText>
     </HeroContainer>

@@ -1,9 +1,21 @@
 import { useEffect, useState } from "react";
-import { FormContainer, Loading } from "./styles";
 import { poppins } from "@/lib/fonts";
+
+import { FormContainer, Loading } from "./styles";
 import FormField from "../FormField";
 import useForm from "@/hooks/useForm";
 import { sendEmail } from "@/utils/sendEmail";
+
+import useLanguageSwitch from "@/hooks/useLanguageSwitch";
+import {
+  title,
+  nameField,
+  emailField,
+  messageField,
+  successMessage,
+  failedMessage,
+  button,
+} from "./text";
 
 function Form() {
   const [loading, setLoading] = useState(false);
@@ -12,6 +24,8 @@ function Form() {
   const name = useForm(false);
   const email = useForm("email");
   const message = useForm("");
+
+  const { language } = useLanguageSwitch();
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -46,31 +60,39 @@ function Form() {
 
   return (
     <FormContainer onSubmit={handleSubmit}>
-      <span>Nos mande uma mensagem:</span>
+      <span>{title[language]}</span>
       <div className="fields">
-        <FormField label="Nome" type="text" name="name" {...name} />
-        <FormField label="Email" type="email" name="email" {...email} />
         <FormField
-          label="Menssagem"
+          label={nameField[language]}
+          type="text"
+          name="name"
+          {...name}
+        />
+        <FormField
+          label={emailField[language]}
+          type="email"
+          name="email"
+          {...email}
+        />
+        <FormField
+          label={messageField[language]}
           type="textarea"
           name="message"
           {...message}
         />
 
         {!success ? (
-          <button aria-label="enviar" disabled={loading}>
+          <button aria-label={button[language]} disabled={loading}>
             {loading ? (
               <Loading />
             ) : (
-              <span className={poppins.className}>Enviar</span>
+              <span className={poppins.className}>{button[language]}</span>
             )}
           </button>
         ) : (
-          <span className="success">Mensagem enviada</span>
+          <span className="success">{successMessage[language]}</span>
         )}
-        {error && (
-          <span className="failed">Ocorreu um erro ao enviar a mensagem</span>
-        )}
+        {error && <span className="failed">{failedMessage[language]}</span>}
       </div>
     </FormContainer>
   );

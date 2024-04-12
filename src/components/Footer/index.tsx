@@ -1,14 +1,20 @@
 "use client";
 
-import { FooterContainer } from "./styles";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+
+import { FooterContainer } from "./styles";
 import Logo from "@/icons/Logo";
 
+import useLanguageSwitch from "@/hooks/useLanguageSwitch";
+import { copyright, alt } from "./text";
+
 function Footer() {
+  const { language } = useLanguageSwitch();
+
   return (
     <FooterContainer>
-      <Image src="logo.svg" width={933} height={347} alt="Logo da BNB IT" />
+      <Image src="logo.svg" width={933} height={347} alt={alt[language]} />
 
       <div>
         <Link href="/">
@@ -16,11 +22,7 @@ function Footer() {
         </Link>
 
         <div>
-          <p>
-            © Copyright {new Date().getFullYear()} -{" "}
-            {new Date().getFullYear() + 1} | BNB IT | Todos os Direitos
-            Reservados | Desenvolvido por
-          </p>
+          <p>{copyright[language]}</p>
           <Link href="https://www.brits.com.br/" target="_blank">
             BRITS
           </Link>

@@ -9,8 +9,8 @@ import {
 } from "react";
 
 interface LanguageSwitchProps {
-  activeLanguage: "pt" | "en";
-  setActiveLanguage: Dispatch<SetStateAction<"pt" | "en">>;
+  language: "pt" | "en";
+  setLanguage: Dispatch<SetStateAction<"pt" | "en">>;
 }
 
 export const LanguageSwitch = createContext({} as LanguageSwitchProps);
@@ -20,13 +20,13 @@ export default function LanguageSwitchProvider({
 }: {
   children: ReactNode;
 }) {
-  const [activeLanguage, setActiveLanguage] = useState<"pt" | "en">("pt");
+  const [language, setLanguage] = useState<"pt" | "en">("pt");
 
   return (
     <LanguageSwitch.Provider
       value={{
-        activeLanguage,
-        setActiveLanguage,
+        language,
+        setLanguage,
       }}
     >
       {children}

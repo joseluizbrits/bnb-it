@@ -2,28 +2,28 @@ import { SwitchContainer } from "./styles";
 import useLanguageSwitch from "@/hooks/useLanguageSwitch";
 
 function ButtonLanguageSwitch() {
-  const { activeLanguage, setActiveLanguage } = useLanguageSwitch();
+  const { language, setLanguage } = useLanguageSwitch();
 
-  function handleActiveLanguage(e: React.MouseEvent) {
+  function handleLanguage(e: React.MouseEvent) {
     const language = e.currentTarget.id;
 
-    if (language === "pt") setActiveLanguage("pt");
-    if (language === "en") setActiveLanguage("en");
+    if (language === "pt") setLanguage("pt");
+    if (language === "en") setLanguage("en");
   }
 
   return (
     <SwitchContainer>
       <button
         id="pt"
-        className={activeLanguage === "pt" ? "active" : ""}
-        onClick={(e) => handleActiveLanguage(e)}
+        className={language === "pt" ? "active" : ""}
+        onClick={(e) => handleLanguage(e)}
       >
         PT
       </button>
       <button
         id="en"
-        className={activeLanguage === "en" ? "active" : ""}
-        onClick={(e) => handleActiveLanguage(e)}
+        className={language === "en" ? "active" : ""}
+        onClick={(e) => handleLanguage(e)}
       >
         EN
       </button>
