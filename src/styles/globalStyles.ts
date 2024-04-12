@@ -17,8 +17,10 @@ const GlobalStyles = createGlobalStyle`
     --gray-mid: #9097AE;
     --gray-dark: #071B34;
     --gray-dark-10: rgba(7, 27, 52, 0.1);
+    --black-10: rgba(0, 0, 0, 0.1);
     --background: #06182F;
-    --warning: #D90E0E;
+    --border: rgba(44, 74, 113, 0.2);
+    --warning: #F62C2C;
   }
 
  * {

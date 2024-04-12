@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const FormContainer = styled.form`
   padding: 40px;
   border-radius: 50px;
-  border: 1px solid var(--primary-dark-50);
-  background-color: var(--gray-dark-10);
+  border: 1px solid var(--border);
+  background-color: var(--black-10);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 

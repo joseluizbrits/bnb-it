@@ -1,14 +1,14 @@
 "use client";
 
-import Logo from "@/icons/Logo";
 import { FooterContainer } from "./styles";
 import Link from "next/link";
-import LogoCut from "@/icons/LogoCut";
+import Image from "next/image";
+import Logo from "@/icons/Logo";
 
 function Footer() {
   return (
     <FooterContainer>
-      <LogoCut />
+      <Image src="logo.svg" width={933} height={347} alt="Logo da BNB IT" />
 
       <div>
         <Link href="/">

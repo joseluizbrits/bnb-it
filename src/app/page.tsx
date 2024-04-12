@@ -1,4 +1,4 @@
-import About from "@/sections/About";
+import About from "@/sections/Contact";
 import Hero from "@/sections/Hero";
 import Solutions from "@/sections/Solutions";
 

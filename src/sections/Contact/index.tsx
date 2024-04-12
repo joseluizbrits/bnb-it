@@ -1,13 +1,13 @@
 "use client";
 
+import { ContactContainer } from "./styles";
 import CoordinatesBottom from "@/components/CordinatesBottom";
-import { AboutContainer } from "./styles";
-import ButtonOutlined from "@/components/ButtonOutlined";
 import Form from "@/components/Form";
+import ButtonOutlined from "@/components/ButtonOutlined";
 
-function About() {
+function Contact() {
   return (
-    <AboutContainer id="about">
+    <ContactContainer>
       <CoordinatesBottom />
       <div>
         <span>Por que escolher a BNB IT?</span>
@@ -22,7 +22,7 @@ function About() {
         </p>
       </div>
 
-      <div>
+      <div id="contact">
         <div>
           <h3>Descubra o poder dos dados</h3>
           <p>
@@ -34,8 +34,8 @@ function About() {
         </div>
         <Form />
       </div>
-    </AboutContainer>
+    </ContactContainer>
   );
 }
 
-export default About;
+export default Contact;

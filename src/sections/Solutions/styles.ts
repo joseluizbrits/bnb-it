@@ -29,7 +29,7 @@ export const SolutionsContainer = styled.section`
     background-color: #030e2f;
     padding: 80px 120px;
     margin-top: 40px;
-    border: 1px solid rgba(44, 74, 113, 0.2);
+    border: 1px solid var(--border);
   }
 
   > div::after {
@@ -63,7 +63,7 @@ export const SolutionsContainer = styled.section`
     border-radius: 50px;
     border: 1px solid var(--primary-dark-50);
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: var(--black-10);
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);

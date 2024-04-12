@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.section`
+export const ContactContainer = styled.section`
   width: 100%;
   position: relative;
 
@@ -47,6 +47,10 @@ export const AboutContainer = styled.section`
     display: flex;
     justify-content: center;
     gap: 80px;
+
+    > div {
+      margin-top: 64px;
+    }
 
     h3 {
       font-size: 2.5rem;
