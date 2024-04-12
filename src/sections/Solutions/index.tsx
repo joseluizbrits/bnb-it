@@ -23,7 +23,7 @@ function Solutions() {
         <ul>
           <li>
             <Database />
-            <h3>Banco de dados</h3>
+            <h3>Banco de Dados</h3>
             <p>
               Sistema de armazenamento que facilita a manipulação dos dados de
               seu negócio. A BNB IT organiza e protege as suas informações de

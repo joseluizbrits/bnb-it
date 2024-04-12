@@ -1,3 +1,4 @@
+import About from "@/sections/About";
 import Hero from "@/sections/Hero";
 import Solutions from "@/sections/Solutions";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <main className="container" style={{ height: "200vw" }}>
       <Hero />
       <Solutions />
+      <About />
     </main>
   );
 }
