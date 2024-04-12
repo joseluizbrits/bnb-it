@@ -4,7 +4,7 @@ import Solutions from "@/sections/Solutions";
 
 export default function Home() {
   return (
-    <main className="container" style={{ height: "200vw" }}>
+    <main className="container">
       <Hero />
       <Solutions />
       <About />

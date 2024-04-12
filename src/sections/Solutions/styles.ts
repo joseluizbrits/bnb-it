@@ -11,7 +11,7 @@ export const SolutionsContainer = styled.section`
   }
 
   > p {
-    font-size: 1.15rem;
+    font-size: 1.125rem;
     line-height: 1.5em;
     color: var(--gray-light);
     max-width: 80ch;
@@ -77,7 +77,7 @@ export const SolutionsContainer = styled.section`
   }
 
   li p {
-    font-size: 1.15rem;
+    font-size: 1.125rem;
     line-height: 1.5em;
     color: var(--gray-light);
     margin-top: 12px;

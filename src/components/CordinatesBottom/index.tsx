@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const CoordinateStyles = styled.div`
   width: 100%;
-  height: 150%;
+  height: 120%;
   margin-top: -180px;
   border-left: 1px solid var(--primary-dark-50);
   border-right: 1px solid var(--primary-dark-50);

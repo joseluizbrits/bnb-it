@@ -2,6 +2,8 @@
 
 import CoordinatesBottom from "@/components/CordinatesBottom";
 import { AboutContainer } from "./styles";
+import ButtonOutlined from "@/components/ButtonOutlined";
+import Form from "@/components/Form";
 
 function About() {
   return (
@@ -18,6 +20,19 @@ function About() {
           de dados e BI. Focamos nas suas necessidades e nos compromissamos com
           o seu negócio.
         </p>
+      </div>
+
+      <div>
+        <div>
+          <h3>Descubra o poder dos dados</h3>
+          <p>
+            Nossos serviços de qualidade capacitam empresas a maximizar o valor
+            de seus dados. Venha impulsionar o crescimento do seu negócio com a
+            gente.
+          </p>
+          <ButtonOutlined href="#">Fale conosco</ButtonOutlined>
+        </div>
+        <Form />
       </div>
     </AboutContainer>
   );

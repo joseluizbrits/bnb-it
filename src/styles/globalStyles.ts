@@ -16,7 +16,9 @@ const GlobalStyles = createGlobalStyle`
     --gray-light: #CDD2DF;
     --gray-mid: #9097AE;
     --gray-dark: #071B34;
+    --gray-dark-10: rgba(7, 27, 52, 0.1);
     --background: #06182F;
+    --warning: #D90E0E;
   }
 
  * {
