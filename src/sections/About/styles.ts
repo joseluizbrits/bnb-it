@@ -79,4 +79,9 @@ export const AboutContainer = styled.section`
       left: 50%;
     }
   }
+
+  a {
+    position: relative;
+    z-index: 1;
+  }
 `;
