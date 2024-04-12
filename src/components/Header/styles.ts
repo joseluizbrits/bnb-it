@@ -7,11 +7,16 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   align-items: center;
 
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
   ul {
     display: flex;
   }
 
-  ul :not(:last-child) a {
+  .navlink {
     font-weight: 500;
     color: var(--white);
     padding: 20px;
@@ -19,11 +24,7 @@ export const HeaderContainer = styled.header`
     transition: 0.3s ease;
   }
 
-  ul :not(:last-child) a:hover {
+  .navlink:hover {
     opacity: 0.8;
-  }
-
-  ul :last-child a {
-    margin-left: 20px;
   }
 `;
