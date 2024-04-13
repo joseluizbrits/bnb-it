@@ -41,6 +41,8 @@ export const FirstText = styled.div`
   }
 
   @media screen and (max-width: 768px) {
+    margin-top: 100px;
+
     h1 {
       font-size: 2.75rem;
     }
@@ -49,6 +51,15 @@ export const FirstText = styled.div`
   @media screen and (max-width: 480px) {
     h1 {
       font-size: 2.25rem;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    > a {
+      display: block;
+      padding: 10px 20px;
     }
   }
 `;
@@ -61,7 +72,7 @@ export const SecondText = styled.div`
   display: grid;
   align-items: center;
 
-  animation: showUp 1.5s ease-out forwards;
+  animation: growUp 1.5s ease-out forwards;
 
   > :nth-child(1) {
     width: 100%;
@@ -100,10 +111,11 @@ export const SecondText = styled.div`
 
   > :nth-child(2) {
     margin-top: -40%;
-    position: relative;
-    z-index: 1;
     display: grid;
     place-items: center;
+
+    position: relative;
+    z-index: 1;
   }
 
   img {
@@ -142,12 +154,32 @@ export const SecondText = styled.div`
     color: var(--primary-light);
   }
 
-  @keyframes showUp {
+  @media screen and (max-width: 768px) {
+    margin-top: 100px;
+
+    > :nth-child(2) {
+      margin-top: -30%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    > :nth-child(1) {
+      aspect-ratio: 3.2/4;
+    }
+
+    > :nth-child(2) {
+      margin-top: -55%;
+    }
+  }
+
+  @keyframes growUp {
     from {
-      scale: 0;
+      scale: 0.8;
+      transform: translateY(100px);
     }
     to {
       scale: 1;
+      transform: translateY(0);
     }
   }
 `;

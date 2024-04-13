@@ -4,38 +4,19 @@ export const CoordinatesTopContainer = styled.div`
   width: 100%;
   height: 90%;
   padding: 0 40px;
-  margin-top: calc(24px + 40px);
+  margin-top: 48px;
   border-top: 1px solid var(--primary-dark-50);
 
   display: flex;
-  gap: 500px;
+  gap: 50%;
 
   position: absolute;
   top: 0;
   left: 0;
 
-  &::before,
-  &::after {
-    content: "";
-    width: 56px;
-    height: 0.5px;
-    background-color: var(--primary-dark-50);
-
-    position: absolute;
-    top: -1px;
-  }
-
-  &::before {
-    left: -56px;
-  }
-
-  &::after {
-    right: -56px;
-  }
-
   div {
     flex: 1;
-    margin-top: -56px;
+    margin-top: -40px;
     position: relative;
     animation: rain 3s ease-in-out forwards;
     animation-delay: 0.5s;
@@ -51,7 +32,7 @@ export const CoordinatesTopContainer = styled.div`
     opacity: 0;
 
     position: absolute;
-    top: 54px;
+    top: 38px;
     z-index: 1;
 
     animation: grow 1s ease-in-out forwards;
@@ -64,6 +45,25 @@ export const CoordinatesTopContainer = styled.div`
 
   div::after {
     right: -2.5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+
+    div::before,
+    div::after {
+      width: 2px;
+      height: 2px;
+      top: 38.5px;
+    }
+
+    div::before {
+      left: -1.5px;
+    }
+
+    div::after {
+      right: -1.5px;
+    }
   }
 
   @keyframes rain {
