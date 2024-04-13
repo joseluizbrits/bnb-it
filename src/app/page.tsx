@@ -4,7 +4,7 @@ import Services from "@/sections/Services";
 
 export default function Home() {
   return (
-    <main style={{ overflow: "hidden" }}>
+    <main>
       <Hero />
       <Services />
       <Contact />

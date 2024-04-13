@@ -55,7 +55,7 @@ export const CoordinatesTopContainer = styled.div`
     z-index: 1;
 
     animation: grow 1s ease-in-out forwards;
-    animation-delay: 2.3s;
+    animation-delay: 1.7s;
   }
 
   div::before {

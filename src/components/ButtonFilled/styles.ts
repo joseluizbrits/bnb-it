@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FilledStyle = styled.a`
-  font-size: 1.25rem;
+  font-size: var(--small);
   font-weight: 600;
   letter-spacing: 0.05rem;
   color: var(--primary-dark);

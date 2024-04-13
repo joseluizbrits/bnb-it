@@ -24,7 +24,7 @@ export const FormContainer = styled.form`
 
   > span {
     font-weight: 500;
-    font-size: 1.25rem;
+    font-size: var(--small);
     line-height: 1.25em;
     letter-spacing: 0.05rem;
     color: var(--white);

@@ -14,7 +14,7 @@ function Footer() {
 
   return (
     <FooterContainer>
-      <Image src="logo.svg" width={933} height={347} alt={alt[language]} />
+      {/* <Image src="logo.svg" width={933} height={347} alt={alt[language]} /> */}
 
       <div>
         <Link href="/">

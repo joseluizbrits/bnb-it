@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const OutlinedStyle = styled.a`
-  font-size: 1.125rem;
+  font-size: var(--small);
   color: var(--primary-light);
   padding: 10px 20px;
   border-radius: 10px;

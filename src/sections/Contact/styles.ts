@@ -9,26 +9,27 @@ export const ContactContainer = styled.section`
     place-items: center;
 
     span {
-      font-size: 1.5rem;
-      letter-spacing: 0.05rem;
+      font-size: var(--medium);
       color: var(--secondary-mid);
     }
 
     h2 {
       font-weight: 700;
-      font-size: 3.5rem;
-      line-height: 1.25em;
+      font-size: var(--xx-large);
+      line-height: 1.15em;
+      letter-spacing: -0.03em;
       text-align: center;
       color: var(--white);
       max-width: 30ch;
+      margin-top: 8px;
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       line-height: 1.5em;
       text-align: center;
       color: var(--gray-mid);
-      margin-top: 12px;
+      margin-top: 16px;
       max-width: 640px;
     }
 
@@ -53,20 +54,21 @@ export const ContactContainer = styled.section`
     }
 
     h3 {
-      font-size: 2.5rem;
+      font-size: var(--large);
       font-weight: 700;
-      line-height: 1.25em;
+      line-height: 1.15em;
+      letter-spacing: -0.03em;
       color: var(--white);
       max-width: 15ch;
     }
 
     p {
-      font-size: 1.25rem;
+      font-size: 1.125rem;
       line-height: 1.5em;
       color: var(--gray-light);
       max-width: 38ch;
-      padding-top: 12px;
-      padding-bottom: 32px;
+      padding-top: 16px;
+      padding-bottom: 36px;
 
       position: relative;
     }

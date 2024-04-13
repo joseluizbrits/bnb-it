@@ -15,8 +15,9 @@ export const FirstText = styled.div`
 
   h1 {
     font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.25em;
+    font-weight: 800;
+    line-height: 1.15em;
+    letter-spacing: -0.03em;
     margin: 0 auto;
     max-width: 28ch;
 
@@ -24,12 +25,12 @@ export const FirstText = styled.div`
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.5em;
     color: var(--gray-mid);
     margin: 0 auto;
     margin-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 36px;
     max-width: 700px;
   }
 
@@ -37,6 +38,18 @@ export const FirstText = styled.div`
     font-style: normal;
     font-weight: 600;
     color: var(--primary-light);
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.75rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 2.25rem;
+    }
   }
 `;
 
@@ -99,25 +112,27 @@ export const SecondText = styled.div`
   }
 
   span {
-    font-size: 1.5rem;
-    letter-spacing: 0.05rem;
+    font-size: var(--medium);
     color: var(--primary-light);
   }
 
   h2 {
     font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 1.25em;
+    font-size: var(--xx-large);
+    line-height: 1.15em;
+    letter-spacing: -0.03em;
     text-align: center;
     color: var(--white);
+    max-width: 30ch;
+    margin-top: 8px;
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     line-height: 1.5em;
     text-align: center;
     color: var(--gray-mid);
-    margin-top: 12px;
+    margin-top: 16px;
     max-width: 640px;
   }
 

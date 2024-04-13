@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ArrowStyle = styled.a`
-  font-size: 1.125rem;
+  font-size: var(--small);
   color: var(--secondary-mid);
   width: max-content;
 

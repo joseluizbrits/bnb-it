@@ -8,7 +8,7 @@ export const ServicesContainer = styled.section`
   > :nth-child(1) {
     h2 {
       font-weight: 500;
-      font-size: 3rem;
+      font-size: var(--x-large);
       color: var(--primary-light);
     }
 
@@ -73,6 +73,7 @@ export const ServicesContainer = styled.section`
   li h3 {
     font-size: 1.75rem;
     font-weight: 600;
+    letter-spacing: -0.03em;
     color: var(--white);
     margin-top: 12px;
   }

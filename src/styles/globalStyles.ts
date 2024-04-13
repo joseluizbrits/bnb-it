@@ -21,6 +21,11 @@ const GlobalStyles = createGlobalStyle`
     --background: #06182F;
     --border: rgba(44, 74, 113, 0.2);
     --warning: #F62C2C;
+    --small: clamp(1rem, 1.125vw, 1.125rem);
+    --medium: clamp(1.125rem, 1.5vw, 1.5rem);
+    --large: clamp(1.75rem, 2.5vw, 2.5rem);
+    --x-large: clamp(1.875rem, 3vw, 3rem);
+    --xx-large: clamp(2rem, 3.5vw, 3.5rem);
   }
 
  * {

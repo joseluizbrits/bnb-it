@@ -35,7 +35,7 @@ function Contact() {
           <p>{paragraph[language]}</p>
           <ButtonOutlined href="#">{button[language]}</ButtonOutlined>
         </div>
-        <Form />
+        {/* <Form /> */}
       </div>
     </ContactContainer>
   );
