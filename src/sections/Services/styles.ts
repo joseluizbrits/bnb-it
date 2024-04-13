@@ -27,8 +27,8 @@ export const ServicesContainer = styled.section`
 
   > :nth-child(2) {
     background-color: #030e2f;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 64px;
+    padding-bottom: 64px;
     margin-top: 40px;
     border: 1px solid var(--border);
   }
@@ -54,7 +54,8 @@ export const ServicesContainer = styled.section`
 
   ul {
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    overflow: hidden;
 
     position: relative;
     z-index: 1;
@@ -68,14 +69,18 @@ export const ServicesContainer = styled.section`
 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
   }
 
   li h3 {
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-weight: 600;
     letter-spacing: -0.03em;
+    line-height: 1.15em;
     color: var(--white);
-    margin-top: 12px;
+    margin-top: 20px;
   }
 
   li p {
@@ -87,13 +92,68 @@ export const ServicesContainer = styled.section`
 
   li div {
     margin-top: 80px;
+    flex: 1;
 
     display: flex;
+    align-items: end;
     gap: 20px;
   }
 
   li div span {
     font-size: 0.875rem;
     color: var(--primary-light);
+  }
+
+  @media screen and (max-width: 1440px) {
+    margin-top: 120px;
+
+    > :nth-child(2) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    ul {
+      gap: 20px;
+    }
+  }
+
+  @media screen and (max-width: 1140px) {
+    > :nth-child(2) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    &::after {
+      width: 1200px;
+      left: 12%;
+      transform: rotate(50deg);
+    }
+
+    ul {
+      flex-direction: column;
+    }
+
+    li {
+      border-radius: 25px;
+    }
+
+    li h3 {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &::after {
+      left: -15%;
+      transform: rotate(55deg);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    &::after {
+      left: -95%;
+      bottom: 30%;
+      transform: rotate(65deg);
+    }
   }
 `;

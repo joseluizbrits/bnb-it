@@ -30,7 +30,7 @@ export const HeaderContainer = styled.header`
   }
 
   .navlink:hover {
-    opacity: 0.8;
+    color: var(--primary-light);
   }
 
   @media screen and (max-width: 768px) {

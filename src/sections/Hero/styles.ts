@@ -157,6 +157,12 @@ export const SecondText = styled.div`
   @media screen and (max-width: 768px) {
     margin-top: 100px;
 
+    > :nth-child(1)::before,
+    > :nth-child(1)::after {
+      width: 330px;
+      height: 80px;
+    }
+
     > :nth-child(2) {
       margin-top: -30%;
     }
@@ -165,6 +171,10 @@ export const SecondText = styled.div`
   @media screen and (max-width: 480px) {
     > :nth-child(1) {
       aspect-ratio: 3.2/4;
+
+      &::before {
+        left: 0;
+      }
     }
 
     > :nth-child(2) {
