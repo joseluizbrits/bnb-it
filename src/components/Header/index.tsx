@@ -11,7 +11,7 @@ function Header() {
   const { language } = useLanguageSwitch();
 
   return (
-    <HeaderContainer className="container">
+    <HeaderContainer className="padding-space">
       <a href="/">
         <Logo />
       </a>

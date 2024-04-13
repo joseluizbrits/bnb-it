@@ -73,6 +73,7 @@ export const FormContainer = styled.form`
     letter-spacing: 0.05rem;
     color: var(--white);
     padding: 12px 0;
+    margin-top: 4px;
     border-radius: 10px;
     background-color: var(--secondary-mid);
     transition: 0.3s ease;

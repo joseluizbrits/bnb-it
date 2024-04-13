@@ -3,50 +3,51 @@ import styled from "styled-components";
 export const ServicesContainer = styled.section`
   margin-top: 160px;
   position: relative;
+  overflow: hidden;
 
-  h2 {
-    font-weight: 500;
-    font-size: 3rem;
-    color: var(--primary-light);
+  > :nth-child(1) {
+    h2 {
+      font-weight: 500;
+      font-size: 3rem;
+      color: var(--primary-light);
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5em;
+      color: var(--gray-light);
+      max-width: 80ch;
+      margin-top: 12px;
+    }
+
+    a {
+      margin-top: 20px;
+    }
   }
 
-  > p {
-    font-size: 1.125rem;
-    line-height: 1.5em;
-    color: var(--gray-light);
-    max-width: 80ch;
-    margin-top: 12px;
-  }
-
-  a {
-    margin-top: 20px;
-  }
-
-  > div {
-    background-color: tomato;
-    width: calc(100% + 240px);
-    margin-left: -120px;
+  > :nth-child(2) {
     background-color: #030e2f;
-    padding: 80px 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     margin-top: 40px;
     border: 1px solid var(--border);
   }
 
-  > div::after {
+  &::after {
     content: "";
     display: block;
     width: 800px;
     height: 100px;
     background-color: #53e9e9;
     border-radius: 50%;
-    opacity: 0.3;
+    opacity: 0.5;
 
-    filter: blur(120px);
-    -webkit-filter: blur(120px);
+    filter: blur(80px);
+    -webkit-filter: blur(80px);
 
     position: absolute;
     bottom: 25%;
-    left: 15%;
+    left: 12%;
 
     transform: rotate(45deg);
   }

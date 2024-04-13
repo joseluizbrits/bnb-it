@@ -67,8 +67,12 @@ const GlobalStyles = createGlobalStyle`
     outline-style: none;
   }
 
-  .container {
+  .padding-space {
     padding: 0 120px;
+  }
+
+  .margin-space {
+    margin: 0 120px;
   }
 
   /* ---------- SCROLLBAR ---------- */
@@ -96,26 +100,42 @@ const GlobalStyles = createGlobalStyle`
   }
 
   @media screen and (max-width: 1440px) {
-    .container {
+    .padding-space {
       padding: 0 80px;
+    }
+
+    .margin-space {
+      margin: 0 80px;
     }
   }
 
   @media screen and (max-width: 1024px) {
-    .container {
+    .padding-space {
       padding: 0 40px;
+    }
+
+    .margin-space {
+      margin: 0 40px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    .container {
+    .padding-space {
       padding: 0 20px;
+    }
+
+    .margin-space {
+      margin: 0 20px;
     }
   }
 
   @media screen and (max-width: 480px) {
-    .container {
+    .padding-space {
       padding: 0 20px;
+    }
+
+    .margin-space {
+      margin: 0 20px;
     }
   }
 `;

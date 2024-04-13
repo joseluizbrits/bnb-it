@@ -21,7 +21,7 @@ function Contact() {
   const { language } = useLanguageSwitch();
 
   return (
-    <ContactContainer>
+    <ContactContainer className="margin-space">
       <CoordinatesBottom />
       <div>
         <span>{label[language]}</span>

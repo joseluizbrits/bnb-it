@@ -9,10 +9,15 @@ export const SwitchContainer = styled.div`
 
   button {
     padding: 6px 12px;
-    border-radius: 50px;
-    color: var(--gray-mid);
     text-transform: uppercase;
+    color: var(--gray-mid);
+    border-radius: 50px;
     transition: 0.1s ease;
+  }
+
+  button:hover {
+    color: var(--gray-light);
+    background-color: var(--gray-dark);
   }
 
   button.active {

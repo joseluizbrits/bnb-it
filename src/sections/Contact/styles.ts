@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.section`
-  width: 100%;
   position: relative;
 
   > :nth-child(2) {
@@ -21,7 +20,7 @@ export const ContactContainer = styled.section`
       line-height: 1.25em;
       text-align: center;
       color: var(--white);
-      max-width: 32ch;
+      max-width: 30ch;
     }
 
     p {

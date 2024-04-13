@@ -3,8 +3,12 @@
 import styled from "styled-components";
 
 export const CoordinateStyles = styled.div`
-  width: 100%;
+  width: fill-available;
+  width: -moz-available;
+  width: -webkit-fill-available;
+
   height: 120%;
+  margin: 0 40px;
   margin-top: -180px;
   border-left: 1px solid var(--primary-dark-50);
   border-right: 1px solid var(--primary-dark-50);

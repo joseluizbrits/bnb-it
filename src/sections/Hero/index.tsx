@@ -23,7 +23,7 @@ function Hero() {
   const { language } = useLanguageSwitch();
 
   return (
-    <HeroContainer>
+    <HeroContainer className="margin-space">
       <CoordinatesTop />
       <FirstText>
         <h1>{firsTitle[language]}</h1>

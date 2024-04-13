@@ -12,11 +12,13 @@ function Services() {
 
   return (
     <ServicesContainer id="services">
-      <h2>{title[language]}</h2>
-      <p>{paragraph[language]}</p>
-      <ButtonArrow href="#">{button[language]}</ButtonArrow>
+      <div className="margin-space">
+        <h2>{title[language]}</h2>
+        <p>{paragraph[language]}</p>
+        <ButtonArrow href="#">{button[language]}</ButtonArrow>
+      </div>
 
-      <div>
+      <div className="padding-space">
         <ul>
           {solutions.map(({ id, icon, name, description, labels }) => (
             <li key={id}>

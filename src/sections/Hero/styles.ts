@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.section`
-  width: 100%;
-
   display: grid;
   justify-content: center;
   position: relative;
