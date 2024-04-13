@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
-  margin: 24px 0;
+  margin: 20px 0;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  > a {
+    display: grid;
+    place-items: center;
+  }
 
   nav {
     display: flex;
@@ -26,5 +31,15 @@ export const HeaderContainer = styled.header`
 
   .navlink:hover {
     opacity: 0.8;
+  }
+
+  @media screen and (max-width: 768px) {
+    ul {
+      display: none;
+    }
+
+    svg {
+      scale: 0.8;
+    }
   }
 `;

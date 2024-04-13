@@ -14,11 +14,13 @@ export const ArrowStyle = styled.a`
     transition: 0.3s ease;
   }
 
-  &:hover {
-    opacity: 0.8;
+  @media screen and (min-width: 1080px) {
+    &:hover {
+      opacity: 0.8;
 
-    svg {
-      transform: translateX(8px);
+      svg {
+        transform: translateX(8px);
+      }
     }
   }
 `;

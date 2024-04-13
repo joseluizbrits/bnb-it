@@ -9,7 +9,9 @@ export const OutlinedStyle = styled.a`
 
   transition: 0.3s ease;
 
-  &:hover {
-    box-shadow: 0 0 10px 5px var(--primary-light-10);
+  @media screen and (min-width: 1080px) {
+    &:hover {
+      box-shadow: 0 0 10px 5px var(--primary-light-10);
+    }
   }
 `;

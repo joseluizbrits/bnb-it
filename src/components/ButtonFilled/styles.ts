@@ -11,7 +11,9 @@ export const FilledStyle = styled.a`
 
   transition: 0.3s ease;
 
-  &:hover {
-    filter: saturate(200%);
+  @media screen and (min-width: 1080px) {
+    &:hover {
+      filter: saturate(200%);
+    }
   }
 `;
