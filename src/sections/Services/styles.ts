@@ -117,12 +117,7 @@ export const ServicesContainer = styled.section`
     }
   }
 
-  @media screen and (max-width: 1140px) {
-    > :nth-child(2) {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
-
+  @media screen and (max-width: 1280px) {
     &::after {
       width: 1200px;
       left: 12%;
@@ -146,6 +141,10 @@ export const ServicesContainer = styled.section`
     &::after {
       left: -15%;
       transform: rotate(55deg);
+    }
+
+    li {
+      padding: 28px;
     }
   }
 

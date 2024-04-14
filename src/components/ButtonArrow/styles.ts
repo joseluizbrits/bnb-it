@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ArrowStyle = styled.a`
   font-size: var(--small);
-  color: var(--secondary-mid);
+  color: var(--secondary-light);
   width: max-content;
 
   display: flex;

@@ -10,8 +10,7 @@ const GlobalStyles = createGlobalStyle`
     --primary-dark: #064F53;
     --primary-dark-50: rgba(6, 79, 63, 0.5);
     --primaryGradient: linear-gradient(to right, #692FA4, #764BA2, #8659B4);
-    --secondary: #8FABFF;
-    --secondary-mid: #2381EF;
+    --secondary-light: #2381EF;
     --secondary-dark: #18295D;
     --gray-light: #CDD2DF;
     --gray-mid: #9097AE;

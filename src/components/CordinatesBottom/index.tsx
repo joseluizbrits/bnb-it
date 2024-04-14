@@ -9,9 +9,9 @@ export const CoordinateStyles = styled.div`
 
   height: 120%;
   margin: 0 40px;
-  margin-top: -180px;
-  border-left: 1px solid var(--primary-dark-50);
-  border-right: 1px solid var(--primary-dark-50);
+  margin-top: -120px;
+  border-left: 0.5px solid var(--primary-dark-50);
+  border-right: 0.5px solid var(--primary-dark-50);
 
   display: flex;
   gap: 500px;
@@ -24,27 +24,27 @@ export const CoordinateStyles = styled.div`
   > div {
     width: 100%;
     height: 0.5px;
-    margin-top: 56px;
+    margin-top: 40px;
     background-color: var(--primary-dark-50);
   }
 
   > div::before,
   > div::after {
     content: "";
-    width: 56px;
+    width: 40px;
     height: 0.5px;
     background-color: var(--primary-dark-50);
 
     position: absolute;
-    top: 56px;
+    top: 40px;
   }
 
   > div::before {
-    left: -56px;
+    left: -40px;
   }
 
   > div::after {
-    right: -56px;
+    right: -40px;
   }
 
   &::after,
@@ -57,7 +57,7 @@ export const CoordinateStyles = styled.div`
     background-color: var(--primary-light);
 
     position: absolute;
-    top: 54.5px;
+    top: 38.5px;
     z-index: 1;
   }
 
@@ -67,6 +67,30 @@ export const CoordinateStyles = styled.div`
 
   &::before {
     right: -2.5px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &::after,
+    &::before {
+      width: 2px;
+      height: 2px;
+      top: 39px;
+    }
+
+    &::after {
+      left: -1px;
+    }
+
+    &::before {
+      right: -1px;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    height: 80%;
   }
 `;
 

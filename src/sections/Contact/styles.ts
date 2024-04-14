@@ -4,13 +4,13 @@ export const ContactContainer = styled.section`
   position: relative;
 
   > :nth-child(2) {
-    margin-top: 280px;
+    margin-top: 160px;
     display: grid;
     place-items: center;
 
     span {
       font-size: var(--medium);
-      color: var(--secondary-mid);
+      color: var(--secondary-light);
     }
 
     h2 {
@@ -47,7 +47,7 @@ export const ContactContainer = styled.section`
     display: grid;
     grid-template-columns: max-content 1fr;
     justify-content: center;
-    gap: 80px;
+    gap: 64px;
 
     > div {
       margin-top: 64px;
@@ -89,5 +89,33 @@ export const ContactContainer = styled.section`
   a {
     position: relative;
     z-index: 1;
+  }
+
+  @media screen and (max-width: 1280px) {
+    > :nth-child(3) {
+      grid-template-columns: 1fr;
+      margin-top: 120px;
+      padding: 0 80px;
+
+      > div {
+        margin-top: 0;
+        padding-left: 80px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    > :nth-child(3) {
+      padding: 0;
+
+      > div {
+        padding-left: 0;
+        order: 2;
+      }
+
+      p::after {
+        display: none;
+      }
+    }
   }
 `;
