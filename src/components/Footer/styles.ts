@@ -2,15 +2,19 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   position: relative;
+  overflow: hidden;
 
-  img {
+  > :nth-child(1) {
+    width: 800px;
+    height: 300px;
+
     position: absolute;
     bottom: -20px;
     left: 10%;
     z-index: -1;
   }
 
-  > div {
+  > :nth-child(2) {
     padding: 40px;
     margin: 180px 40px 20px 40px;
     border-radius: 25px;
@@ -23,11 +27,6 @@ export const FooterContainer = styled.footer`
     justify-content: space-between;
     align-items: center;
 
-    div {
-      display: flex;
-      gap: 4px;
-    }
-
     p {
       color: var(--gray-mid);
     }
@@ -35,6 +34,28 @@ export const FooterContainer = styled.footer`
     a {
       text-decoration: underline;
       color: var(--gray-mid);
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    > :nth-child(2) {
+      padding: 20px;
+      flex-direction: column;
+      gap: 12px;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    > :nth-child(1) {
+      left: 40px;
+    }
+
+    > :nth-child(2) {
+      margin: 180px 20px 20px 20px;
     }
   }
 `;

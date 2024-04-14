@@ -14,19 +14,21 @@ function Footer() {
 
   return (
     <FooterContainer>
-      {/* <Image src="logo.svg" width={933} height={347} alt={alt[language]} /> */}
+      <div>
+        <Image src="logo.svg" fill alt={alt[language]} />
+      </div>
 
       <div>
         <Link href="/">
           <Logo />
         </Link>
 
-        <div>
-          <p>{copyright[language]}</p>
+        <p>
+          {copyright[language]}{" "}
           <Link href="https://www.brits.com.br/" target="_blank">
             BRITS
           </Link>
-        </div>
+        </p>
       </div>
     </FooterContainer>
   );
