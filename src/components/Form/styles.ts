@@ -5,8 +5,11 @@ export const FormContainer = styled.form`
   border-radius: 50px;
   border: 1px solid var(--border);
   background-color: var(--black-10);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 
   position: relative;
 
@@ -143,6 +146,17 @@ export const FormContainer = styled.form`
     input,
     textarea {
       padding: 10px 20px;
+      border: 1px solid transparent;
+    }
+
+    input:focus,
+    textarea:focus {
+      border: 1px solid var(--secondary-light);
+    }
+
+    input.error,
+    textarea.error {
+      border: 1px solid var(--warning);
     }
 
     button {

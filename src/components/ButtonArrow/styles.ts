@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const ArrowStyle = styled.a`
   font-size: var(--small);
+  letter-spacing: 0.05rem;
   color: var(--secondary-light);
   width: max-content;
 
   display: flex;
   place-items: center;
-  gap: 20px;
+  gap: 12px;
 
   &,
   svg {
@@ -19,7 +20,7 @@ export const ArrowStyle = styled.a`
       opacity: 0.8;
 
       svg {
-        transform: translateX(8px);
+        transform: translateX(6px);
       }
     }
   }

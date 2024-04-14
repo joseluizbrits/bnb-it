@@ -38,12 +38,15 @@ export const ServicesContainer = styled.section`
     display: block;
     width: 800px;
     height: 100px;
-    background-color: #53e9e9;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 0.1;
 
-    filter: blur(80px);
-    -webkit-filter: blur(80px);
+    background-color: #53e9e9;
+    box-shadow: 0 0 100px 80px #53e9e9;
+
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -webkit-transform: translateZ(0);
 
     position: absolute;
     bottom: 25%;
@@ -66,9 +69,6 @@ export const ServicesContainer = styled.section`
     border: 1px solid var(--primary-dark-50);
     padding: 40px;
     background-color: var(--black-10);
-
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 
     display: flex;
     flex-direction: column;

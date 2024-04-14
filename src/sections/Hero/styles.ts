@@ -81,32 +81,26 @@ export const SecondText = styled.div`
     position: relative;
   }
 
-  > :nth-child(1)::before,
-  > :nth-child(1)::after {
+  > :nth-child(1)::before {
     content: "";
     display: block;
-    width: 600px;
-    height: 200px;
+    width: 800px;
+    height: 100px;
     border-radius: 50%;
-    opacity: 0.6;
+    opacity: 0.15;
 
-    filter: blur(140px);
-    -webkit-filter: blur(140px);
+    box-shadow: 0 0 80px 80px #6fefef;
+    background-color: #6fefef;
+
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 
     position: absolute;
     z-index: -1;
-  }
-
-  > :nth-child(1)::before {
-    background-color: #a442f0;
     top: -12px;
-    left: 28px;
-  }
-
-  > :nth-child(1)::after {
-    background-color: #6fefef;
-    top: -12px;
-    right: 28px;
+    left: 10%;
   }
 
   > :nth-child(2) {
@@ -157,8 +151,7 @@ export const SecondText = styled.div`
   @media screen and (max-width: 768px) {
     margin-top: 100px;
 
-    > :nth-child(1)::before,
-    > :nth-child(1)::after {
+    > :nth-child(1)::before {
       width: 330px;
       height: 80px;
     }
@@ -171,10 +164,6 @@ export const SecondText = styled.div`
   @media screen and (max-width: 480px) {
     > :nth-child(1) {
       aspect-ratio: 3.2/4;
-
-      &::before {
-        left: 0;
-      }
     }
 
     > :nth-child(2) {

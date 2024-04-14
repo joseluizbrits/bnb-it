@@ -20,8 +20,11 @@ export const FooterContainer = styled.footer`
     border-radius: 25px;
     border: 1px solid var(--border);
     background-color: var(--black-10);
+
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 
     display: flex;
     justify-content: space-between;
