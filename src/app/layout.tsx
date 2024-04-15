@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "pt-BR": "/pt-BR",
     },
   },
-  metadataBase: new URL("https://bnbit.com.br"),
+  metadataBase: new URL("https://bnbit.netlify.app/"),
   openGraph: {
     title: "BNB IT | Consultoria em Banco de Dados e Business Intelligence",
     description:
