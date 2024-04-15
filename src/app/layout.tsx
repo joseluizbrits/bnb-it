@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { poppins } from "@/lib/fonts";
 
 import StylesProvider from "@/styles/StylesProvider";
+import LanguageSwitchProvider from "@/contexts/LanguageSwitch";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import LanguageSwitchProvider from "@/contexts/LanguageSwitch";
 
 export const metadata: Metadata = {
-  title: "BNB IT",
+  title: "BNB IT | Consultoria em Banco de Dados e Business Intelligence",
   description:
-    "Consultoria de precisão para alavancar o sucesso da sua empresa",
+    "Melhore seus processos de negócios por meio de dados e análises técnicas. Descubra soluções de banco de dados e business intelligence (BI) que impulsionam seu crescimento e competitividade no mercado.",
   keywords: [],
   alternates: {
     canonical: "/",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://bnbit.com.br"),
   openGraph: {
-    title: "BNB IT",
+    title: "BNB IT | Consultoria em Banco de Dados e Business Intelligence",
     description:
-      "Consultoria de precisão para alavancar o sucesso da sua empresa",
+      "Melhore seus processos de negócios por meio de dados e análises técnicas. Descubra soluções de banco de dados e business intelligence (BI) que impulsionam seu crescimento e competitividade no mercado.",
     type: "website",
     url: "https://bnbit.com.br",
     siteName: "BNB IT",
