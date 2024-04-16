@@ -139,10 +139,6 @@ export const FormContainer = styled.form`
       display: none;
     }
 
-    .fields {
-      gap: 12px;
-    }
-
     input,
     textarea {
       padding: 10px 20px;

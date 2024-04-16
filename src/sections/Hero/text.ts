@@ -4,8 +4,8 @@ export const firsTitle = {
 };
 
 export const firstSubtitle = {
-  pt: "A BNB IT organiza os seus dados de forma eficaz, melhora a compreensão do <em>desempenho do seu negócio</em> e te faz identificar novas oportunidades.",
-  en: "BNB IT organizes your data effectively, improves understanding of your <em>business performance</em> and helps you identify new opportunities.",
+  pt: "A BNB TI organiza os seus dados de forma eficaz, melhora a compreensão do <em>desempenho do seu negócio</em> e te faz identificar novas oportunidades.",
+  en: "BNB TI organizes your data effectively, improves understanding of your <em>business performance</em> and helps you identify new opportunities.",
 };
 
 export const secondTitle = {

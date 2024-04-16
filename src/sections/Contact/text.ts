@@ -1,6 +1,6 @@
 export const label = {
-  pt: "Por que escolher a BNB IT?",
-  en: "Why choose BNB IT?",
+  pt: "Por que escolher a BNB TI?",
+  en: "Why choose BNB TI?",
 };
 
 export const firstTitle = {
@@ -9,8 +9,8 @@ export const firstTitle = {
 };
 
 export const subtitle = {
-  pt: "Com a BNB IT você tem um parceira em tecnologia com <em>experiência sólida em TI</em> e conhecimento específico em banco de dados e BI. Focamos nas suas necessidades e nos compromissamos com o seu negócio.",
-  en: "With BNB IT you have a technology partner with <em>solid IT experience</em> and specific knowledge of databases and BI. We focus on your needs and are committed to your business.",
+  pt: "Com a BNB TI você tem um parceira em tecnologia com <em>experiência sólida em TI</em> e conhecimento específico em banco de dados, BI e plataforma de email. Focamos nas suas necessidades e nos compromissamos com o seu negócio.",
+  en: "With BNB TI you have a technology partner with <em>solid IT experience</em> and specific knowledge of databases, BI and email platforms. We focus on your needs and are committed to your business.",
 };
 
 export const secondTitle = {

@@ -38,6 +38,7 @@ function Hero() {
             fill
             priority
             unoptimized
+            quality={100}
             alt={alt[language]}
           />
         </div>

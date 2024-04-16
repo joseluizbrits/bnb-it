@@ -11,8 +11,8 @@ export const solutions = [
       en: "Database",
     },
     description: {
-      pt: "Sistema de armazenamento que facilita a manipulação dos dados de seu negócio. A BNB IT organiza e protege as suas informações de forma eficaz fazendo com que sua gestão se torne mais simples e assertiva.",
-      en: "A storage system that makes it easier to handle your business data. BNB IT effectively organizes and protects your information, making your management simpler and more assertive.",
+      pt: "Sistema de armazenamento que facilita a manipulação dos dados de seu negócio. A BNB TI organiza e protege as suas informações de forma eficaz fazendo com que sua gestão se torne mais simples e assertiva.",
+      en: "A storage system that makes it easier to handle your business data. BNB TI effectively organizes and protects your information, making your management simpler and more assertive.",
     },
     labels: [
       {

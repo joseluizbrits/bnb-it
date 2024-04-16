@@ -84,7 +84,7 @@ export const SecondText = styled.div`
   > :nth-child(1)::before {
     content: "";
     display: block;
-    width: 800px;
+    width: clamp(500px, 55vw, 800px);
     height: 100px;
     border-radius: 50%;
     opacity: 0.15;
@@ -154,6 +154,7 @@ export const SecondText = styled.div`
     > :nth-child(1)::before {
       width: 330px;
       height: 80px;
+      left: 22%;
     }
 
     > :nth-child(2) {
@@ -164,6 +165,12 @@ export const SecondText = styled.div`
   @media screen and (max-width: 480px) {
     > :nth-child(1) {
       aspect-ratio: 3.2/4;
+    }
+
+    > :nth-child(1)::before {
+      width: 240px;
+      height: 40px;
+      left: 18%;
     }
 
     > :nth-child(2) {

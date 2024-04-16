@@ -16,7 +16,7 @@ export const FooterContainer = styled.footer`
 
   > :nth-child(2) {
     padding: 40px;
-    margin: 180px 40px 20px 40px;
+    margin: 240px 40px 20px 40px;
     border-radius: 25px;
     border: 1px solid var(--border);
     background-color: var(--black-10);
