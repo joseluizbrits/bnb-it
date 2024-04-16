@@ -3,12 +3,6 @@ import styled from "styled-components";
 export const CertificationsContainer = styled.section`
   margin-top: 160px;
 
-  h2 {
-    font-weight: 500;
-    font-size: var(--x-large);
-    color: var(--primary-light);
-  }
-
   ul {
     margin-top: 40px;
     padding-bottom: 20px;
@@ -23,8 +17,8 @@ export const CertificationsContainer = styled.section`
     background-color: var(--gray-dark);
     border: 1px solid var(--border);
     border-radius: 50%;
-    flex: 1;
     aspect-ratio: 1/1;
+    flex: 1;
     position: relative;
   }
 

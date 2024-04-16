@@ -1,11 +1,14 @@
 "use client";
 
 import { ServicesContainer } from "./styles";
+import { Subtitle } from "@/styles/Text/Subtitle";
+import { Paragraph } from "@/styles/Text/Paragraph";
+
 import ButtonArrow from "@/components/ButtonArrow";
+import { solutions } from "./solutions";
 
 import useLanguageSwitch from "@/hooks/useLanguageSwitch";
 import { title, paragraph, button } from "./text";
-import { solutions } from "./solutions";
 
 function Services() {
   const { language } = useLanguageSwitch();
@@ -13,8 +16,8 @@ function Services() {
   return (
     <ServicesContainer id="services">
       <div className="margin-space">
-        <h2>{title[language]}</h2>
-        <p>{paragraph[language]}</p>
+        <Subtitle>{title[language]}</Subtitle>
+        <Paragraph>{paragraph[language]}</Paragraph>
         <ButtonArrow href="#">{button[language]}</ButtonArrow>
       </div>
 
@@ -24,7 +27,7 @@ function Services() {
             <li key={id}>
               {icon}
               <h3>{name[language]}</h3>
-              <p>{description[language]}</p>
+              <Paragraph>{description[language]}</Paragraph>
               <div>
                 {labels.map((label, index) => (
                   <span key={"lb" + index}>{label[language]}</span>

@@ -117,37 +117,6 @@ export const SecondText = styled.div`
     object-fit: cover;
   }
 
-  span {
-    font-size: var(--medium);
-    color: var(--primary-light);
-  }
-
-  h2 {
-    font-weight: 700;
-    font-size: var(--xx-large);
-    line-height: 1.15em;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: var(--white);
-    max-width: 30ch;
-    margin-top: 8px;
-  }
-
-  p {
-    font-size: 1.125rem;
-    line-height: 1.5em;
-    text-align: center;
-    color: var(--gray-mid);
-    margin-top: 16px;
-    max-width: 640px;
-  }
-
-  em {
-    font-style: normal;
-    font-weight: 600;
-    color: var(--primary-light);
-  }
-
   @media screen and (max-width: 768px) {
     margin-top: 100px;
 

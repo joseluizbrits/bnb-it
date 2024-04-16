@@ -6,16 +6,7 @@ export const ServicesContainer = styled.section`
   overflow: hidden;
 
   > :nth-child(1) {
-    h2 {
-      font-weight: 500;
-      font-size: var(--x-large);
-      color: var(--primary-light);
-    }
-
     p {
-      font-size: 1.125rem;
-      line-height: 1.5em;
-      color: var(--gray-light);
       max-width: 80ch;
       margin-top: 12px;
     }
@@ -84,9 +75,6 @@ export const ServicesContainer = styled.section`
   }
 
   li p {
-    font-size: 1.125rem;
-    line-height: 1.5em;
-    color: var(--gray-light);
     margin-top: 12px;
   }
 

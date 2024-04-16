@@ -3,7 +3,8 @@
 import Image from "next/image";
 import parse from "html-react-parser";
 
-import { FirstText, HeroContainer, SecondText } from "./styles";
+import { HeroContainer, FirstText, SecondText } from "./styles";
+import { Title, TitleLabel, TitleParagraph } from "@/styles/Text/Title";
 
 import CoordinatesTop from "@/components/CordinatesTop";
 import ButtonFilled from "@/components/ButtonFilled";
@@ -27,7 +28,7 @@ function Hero() {
       <CoordinatesTop />
       <FirstText>
         <h1>{firsTitle[language]}</h1>
-        <p>{parse(firstSubtitle[language])}</p>
+        <TitleParagraph>{parse(firstSubtitle[language])}</TitleParagraph>
         <ButtonFilled href="#">{button[language]}</ButtonFilled>
       </FirstText>
 
@@ -44,9 +45,9 @@ function Hero() {
         </div>
 
         <div>
-          <span>{label[language]}</span>
-          <h2>{secondTitle[language]}</h2>
-          <p>{parse(secondSubtitle[language])}</p>
+          <TitleLabel>{label[language]}</TitleLabel>
+          <Title>{secondTitle[language]}</Title>
+          <TitleParagraph>{parse(secondSubtitle[language])}</TitleParagraph>
         </div>
       </SecondText>
     </HeroContainer>

@@ -2,17 +2,18 @@
 
 import Image from "next/image";
 import { CertificationsContainer } from "./styles";
-import certificates from "./certificates";
+import { Subtitle } from "@/styles/Text/Subtitle";
 
+import certificates from "./certificates";
 import useLanguageSwitch from "@/hooks/useLanguageSwitch";
-import { title } from "./text";
+import { subtitle } from "./text";
 
 function Certifications() {
   const { language } = useLanguageSwitch();
 
   return (
     <CertificationsContainer className="margin-space">
-      <h2>{title[language]}</h2>
+      <Subtitle>{subtitle[language]}</Subtitle>
       <ul>
         {certificates.map(({ id, img, alt }) => (
           <li key={id}>

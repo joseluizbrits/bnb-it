@@ -3,6 +3,9 @@
 import parse from "html-react-parser";
 import { ContactContainer } from "./styles";
 
+import { Title, TitleLabel, TitleParagraph } from "@/styles/Text/Title";
+import { Paragraph } from "@/styles/Text/Paragraph";
+
 import CoordinatesBottom from "@/components/CordinatesBottom";
 import Form from "@/components/Form";
 import ButtonOutlined from "@/components/ButtonOutlined";
@@ -24,15 +27,15 @@ function Contact() {
     <ContactContainer className="margin-space">
       <CoordinatesBottom />
       <div>
-        <span>{label[language]}</span>
-        <h2>{firstTitle[language]}</h2>
-        <p>{parse(subtitle[language])}</p>
+        <TitleLabel $secondary>{label[language]}</TitleLabel>
+        <Title>{firstTitle[language]}</Title>
+        <TitleParagraph>{parse(subtitle[language])}</TitleParagraph>
       </div>
 
       <div id="contact">
         <div>
           <h3>{secondTitle[language]}</h3>
-          <p>{paragraph[language]}</p>
+          <Paragraph>{paragraph[language]}</Paragraph>
           <ButtonOutlined href="#">{button[language]}</ButtonOutlined>
         </div>
         <Form />

@@ -7,37 +7,6 @@ export const ContactContainer = styled.section`
     margin-top: 160px;
     display: grid;
     place-items: center;
-
-    span {
-      font-size: var(--medium);
-      color: var(--secondary-light);
-    }
-
-    h2 {
-      font-weight: 700;
-      font-size: var(--xx-large);
-      line-height: 1.15em;
-      letter-spacing: -0.03em;
-      text-align: center;
-      color: var(--white);
-      max-width: 30ch;
-      margin-top: 8px;
-    }
-
-    p {
-      font-size: 1.125rem;
-      line-height: 1.5em;
-      text-align: center;
-      color: var(--gray-mid);
-      margin-top: 16px;
-      max-width: 640px;
-    }
-
-    em {
-      font-style: normal;
-      font-weight: 600;
-      color: var(--primary-light);
-    }
   }
 
   > :nth-child(3) {
@@ -63,9 +32,6 @@ export const ContactContainer = styled.section`
     }
 
     p {
-      font-size: 1.125rem;
-      line-height: 1.5em;
-      color: var(--gray-light);
       max-width: 38ch;
       padding-top: 16px;
       padding-bottom: 36px;
