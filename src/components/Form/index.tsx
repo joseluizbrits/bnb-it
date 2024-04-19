@@ -30,8 +30,6 @@ function Form() {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
-    return;
-
     sendEmail({
       name,
       email,

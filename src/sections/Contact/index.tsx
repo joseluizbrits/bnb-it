@@ -8,7 +8,7 @@ import { Paragraph } from "@/styles/Text/Paragraph";
 
 import CoordinatesBottom from "@/components/CordinatesBottom";
 import Form from "@/components/Form";
-import ButtonOutlined from "@/components/ButtonOutlined";
+// import ButtonOutlined from "@/components/ButtonOutlined";
 
 import useLanguageSwitch from "@/hooks/useLanguageSwitch";
 import {
@@ -36,7 +36,7 @@ function Contact() {
         <div>
           <h3>{secondTitle[language]}</h3>
           <Paragraph>{paragraph[language]}</Paragraph>
-          <ButtonOutlined href="#">{button[language]}</ButtonOutlined>
+          {/* <ButtonOutlined href="#">{button[language]}</ButtonOutlined> */}
         </div>
         <Form />
       </div>

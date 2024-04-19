@@ -38,10 +38,10 @@ export const sendEmail = ({
 
     emailjs
       .send(
-        "service_ovc51pi",
-        "template_ra9q7ua",
+        "service_edhbp53",
+        "template_vqs0wt5",
         templateParams,
-        "s_YA3z6mo4qOe0thA"
+        "GyPC8U2FdaUvuAdOW"
       )
       .then(
         () => {

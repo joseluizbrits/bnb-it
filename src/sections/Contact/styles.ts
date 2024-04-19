@@ -34,7 +34,6 @@ export const ContactContainer = styled.section`
     p {
       max-width: 38ch;
       padding-top: 16px;
-      padding-bottom: 36px;
 
       position: relative;
     }
@@ -59,9 +58,10 @@ export const ContactContainer = styled.section`
 
   @media screen and (max-width: 1280px) {
     > :nth-child(3) {
-      grid-template-columns: 1fr;
       margin-top: 120px;
       padding: 0 80px;
+      grid-template-columns: 1fr;
+      gap: 40px;
 
       > div {
         margin-top: 0;
@@ -76,7 +76,6 @@ export const ContactContainer = styled.section`
 
       > div {
         padding-left: 0;
-        order: 2;
       }
 
       p::after {

@@ -29,7 +29,9 @@ function Hero() {
       <FirstText>
         <h1>{firsTitle[language]}</h1>
         <TitleParagraph>{parse(firstSubtitle[language])}</TitleParagraph>
-        <ButtonFilled href="#">{button[language]}</ButtonFilled>
+        <ButtonFilled href="mailto:comercial@bnbti.com.br">
+          {button[language]}
+        </ButtonFilled>
       </FirstText>
 
       <SecondText>

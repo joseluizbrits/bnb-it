@@ -4,7 +4,7 @@ import { ServicesContainer } from "./styles";
 import { Subtitle } from "@/styles/Text/Subtitle";
 import { Paragraph } from "@/styles/Text/Paragraph";
 
-import ButtonArrow from "@/components/ButtonArrow";
+// import ButtonArrow from "@/components/ButtonArrow";
 import { solutions } from "./solutions";
 
 import useLanguageSwitch from "@/hooks/useLanguageSwitch";
@@ -18,7 +18,7 @@ function Services() {
       <div className="margin-space">
         <Subtitle>{title[language]}</Subtitle>
         <Paragraph>{paragraph[language]}</Paragraph>
-        <ButtonArrow href="#">{button[language]}</ButtonArrow>
+        {/* <ButtonArrow href="#contact">{button[language]}</ButtonArrow> */}
       </div>
 
       <div className="padding-space">
