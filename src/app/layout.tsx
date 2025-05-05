@@ -17,13 +17,13 @@ export const metadata: Metadata = {
       "pt-BR": "/pt-BR",
     },
   },
-  metadataBase: new URL("https://bnbti.com.br"),
+  metadataBase: new URL("https://bnbti.netlify.app"),
   openGraph: {
     title: "BNB TI | Consultoria em Banco de Dados e Business Intelligence",
     description:
       "Melhore seus processos de negócios por meio de dados e análises técnicas. Descubra soluções de banco de dados e business intelligence (BI) que impulsionam seu crescimento e competitividade no mercado.",
     type: "website",
-    url: "https://bnbti.com.br",
+    url: "https://bnbti.netlify.app",
     siteName: "BNB TI",
     locale: "pt_BR",
   },
